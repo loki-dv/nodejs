@@ -8,8 +8,8 @@ when 'debian'
     uri node['nodejs']['repo']
     distribution node['lsb']['codename']
     components ['main']
-    keyserver node['nodejs']['keyserver']
-    key node['nodejs']['key']
+#    keyserver node['nodejs']['keyserver']
+#    key node['nodejs']['key']
   end
 when 'rhel', 'amazon'
   yum_repository 'node.js' do
